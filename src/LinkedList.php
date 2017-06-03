@@ -4,7 +4,6 @@ namespace Sirolad;
 
 class LinkedList implements \Iterator
 {
-
     private $_firstNode       = null;
     private $_totalNode       = 0;
     private $_currentNode     = null;
