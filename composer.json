@@ -1,0 +1,16 @@
+{
+    "name": "sirolad/data-structures",
+    "description": "An implementation of Data Structures that does not exist in SPL",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Surajudeen Akande",
+            "email": "suurajudeen.akande@andela.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {"Sirolad\\": "src/"}
+    }
+}
