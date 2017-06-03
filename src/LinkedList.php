@@ -2,7 +2,7 @@
 
 namespace Sirolad;
 
-class LinkedList implements Iterator
+class LinkedList implements \Iterator
 {
 
     private $_firstNode       = null;
