@@ -1,5 +1,7 @@
 <?php
-
+/**
+ * This class implements LinkedList using Arrays
+ */
 namespace Sirolad;
 
 class LinkedList implements \Iterator
