@@ -1,7 +1,9 @@
 <?php
-
 namespace Sirolad;
 
+/**
+ * Stack Interface
+ */
 interface Stack
 {
     public function push(string $item);
