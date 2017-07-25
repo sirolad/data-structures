@@ -19,28 +19,23 @@ class TreeNode
 class Tree
 {
     public $root = null;
+    public $visited;
 
     public function __construct(TreeNode $node)
     {
-        $this->root = $node;
+        $this->root    = $node;
+        $this->visited = new SplQueue;
     }
 
-    public function BFS(TreeNode $node): SplQueue
+    public function DFS(TreeNode $node)
     {
-        $queue   = new SplQueue;
-        $visited = new SplQueue;
+        $this->visited->enqueue($node);
 
-        $queue->enqueue($node);
-
-        while (!$queue->isEmpty()) {
-            $current = $queue->dequeue();
-            $visited->enqueue($current);
-
-            foreach ($current->children as $child) {
-                $queue->enqueue($child);
+        if ($node->children) {
+            foreach ($node->children as $child) {
+                $this->DFS($child);
             }
         }
-        return $visited;
     }
 }
 
@@ -69,8 +64,9 @@ try {
     $node4->addChildren($node7);
     $node5->addChildren($node8);
 
-    $visited = $tree->BFS($tree->root);
+    $tree->DFS($tree->root);
 
+    $visited = $tree->visited;
     while (!$visited->isEmpty()) {
         echo $visited->dequeue()->data . "\n";
     }
