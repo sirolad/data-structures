@@ -3,7 +3,7 @@
 /**
  * A recursive function to get the Nth term of fibonacci Series.
  * @param  int $n
- * @return int    
+ * @return int
  */
 function fibonacci(int $n) :int
 {
@@ -16,4 +16,4 @@ function fibonacci(int $n) :int
   return fibonacci($n - 1) + fibonacci($n - 2);
 }
 
-echo fibonacci(10);
+echo fibonacci(9);
