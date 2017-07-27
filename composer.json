@@ -9,7 +9,10 @@
             "email": "suurajudeen.akande@andela.com"
         }
     ],
-    "require": {},
+    "require": {
+        "reactivex/rxphp": "^2.0",
+        "react/event-loop": "^0.4.3"
+    },
     "autoload": {
         "psr-4": {"Sirolad\\": "src/"}
     }

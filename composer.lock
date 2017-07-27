@@ -1,0 +1,171 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "4d7c89538f37ad1b8ef1db1bfabffe9d",
+    "packages": [
+        {
+            "name": "react/event-loop",
+            "version": "v0.4.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/reactphp/event-loop.git",
+                "reference": "8bde03488ee897dc6bb3d91e4e17c353f9c5252f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/reactphp/event-loop/zipball/8bde03488ee897dc6bb3d91e4e17c353f9c5252f",
+                "reference": "8bde03488ee897dc6bb3d91e4e17c353f9c5252f",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.8"
+            },
+            "suggest": {
+                "ext-event": "~1.0",
+                "ext-libev": "*",
+                "ext-libevent": ">=0.1.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "React\\EventLoop\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Event loop abstraction layer that libraries can use for evented I/O.",
+            "keywords": [
+                "asynchronous",
+                "event-loop"
+            ],
+            "time": "2017-04-27T10:56:23+00:00"
+        },
+        {
+            "name": "react/promise",
+            "version": "v2.5.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/reactphp/promise.git",
+                "reference": "62785ae604c8d69725d693eb370e1d67e94c4053"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/reactphp/promise/zipball/62785ae604c8d69725d693eb370e1d67e94c4053",
+                "reference": "62785ae604c8d69725d693eb370e1d67e94c4053",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.8"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "React\\Promise\\": "src/"
+                },
+                "files": [
+                    "src/functions_include.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jan Sorgalla",
+                    "email": "jsorgalla@gmail.com"
+                }
+            ],
+            "description": "A lightweight implementation of CommonJS Promises/A for PHP",
+            "keywords": [
+                "promise",
+                "promises"
+            ],
+            "time": "2017-03-25T12:08:31+00:00"
+        },
+        {
+            "name": "reactivex/rxphp",
+            "version": "2.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ReactiveX/RxPHP.git",
+                "reference": "7f5f669850cc035d78f7dafb45fd797fe0ba9e7d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ReactiveX/RxPHP/zipball/7f5f669850cc035d78f7dafb45fd797fe0ba9e7d",
+                "reference": "7f5f669850cc035d78f7dafb45fd797fe0ba9e7d",
+                "shasum": ""
+            },
+            "require": {
+                "php": "~7.0",
+                "react/promise": "~2.2"
+            },
+            "require-dev": {
+                "phpunit/phpcov": "^3.1",
+                "phpunit/phpunit": "^5.5",
+                "react/event-loop": "^0.4.2",
+                "satooshi/php-coveralls": "~1.0"
+            },
+            "suggest": {
+                "react/event-loop": "Used for scheduling async operations"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Rx\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Alexander",
+                    "email": "iam.asm89@gmail.com"
+                },
+                {
+                    "name": "David Dan",
+                    "email": "davidwdan@gmail.com"
+                },
+                {
+                    "name": "Matt Bonneau",
+                    "email": "matt@bonneau.net"
+                }
+            ],
+            "description": "Reactive extensions for php.",
+            "homepage": "https://github.com/ReactiveX/RxPHP",
+            "keywords": [
+                "extensions",
+                "reactive",
+                "rx"
+            ],
+            "time": "2017-05-21T01:48:34+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}
